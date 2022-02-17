@@ -1,0 +1,8 @@
+{
+    "coverageDirectory": "./coverage",
+    "testMatch": [
+        "**/?(*.)+(spec).js?(x)"
+    ],
+    "resetMocks": true,
+    "clearMocks": true
+}

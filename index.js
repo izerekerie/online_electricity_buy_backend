@@ -1,4 +1,4 @@
-
+const meterRoutes =require('./routes/meter')
 const mongoose= require('mongoose')
 const cors= require('cors')
 const dotenv= require('dotenv')
@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
      res.send('welcome to our app');
  });
 // app.use('/api/foods',foodController);
+app.use('api/meters',meterRoutes);
 
 const PORT=process.env.PORT || 5000;
 
