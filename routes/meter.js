@@ -1,12 +1,13 @@
 import express from 'express'
+import { getMeter } from '../controllers/meterController.js';
+// import {getMeters,getMeter,createMeter,updateMeter,deleteMeter,} from '../controllers/meterController'
+export const  meterRoutes=express.Router();
 
-import {getMeters,getMeter,createMeter,updateMeter,deleteMeter,} from '../controllers/meterController'
-const router=express.Router();
-
-router.get('/',getMeter)
-router.get('/:id',getMeter)
-router.post('/',createMeter)
-router.patch('/:id',updateMeter)
-router.delete('/:id',deleteMeter)
-
-export default router
+meterRoutes.get('/',getMeters)
+meterRoutes.get('/:id',getMeter)
+meterRoutes.post('/',createMeter)
+meterRoutes.patch('/:id',updateMeter)
+meterRoutes.delete('/:id',deleteMeter)
+export default {
+    meterRoutes: express.Router()
+  }

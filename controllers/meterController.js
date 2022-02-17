@@ -2,7 +2,7 @@
 import Meter from '../models/meter';
 import Token from '../models/token';
 import mongoose from 'mongoose'
- export const getMters= async(req,res)=>{
+ export const getMeters= async(req,res)=>{
    try{
   const meters=  await Meter.find();
   res.status(200).json(postMessages)

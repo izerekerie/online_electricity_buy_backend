@@ -1,11 +1,11 @@
-const meterRoutes =require('./routes/meter')
+import {meterRoutes} from './routes/meter.js'
 const mongoose= require('mongoose')
 const cors= require('cors')
 const dotenv= require('dotenv')
 const express=require('express')
 dotenv.config();
 
-// const foodController =require('./controllers/foodController')
+
  var app =express()
 const bodyParser=require('body-parser')
 app.use(bodyParser.json());
@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended:true}));
  app.get('/',(req,res)=>{
      res.send('welcome to our app');
  });
-// app.use('/api/foods',foodController);
+
 app.use('api/meters',meterRoutes);
 
 const PORT=process.env.PORT || 5000;
