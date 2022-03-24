@@ -1,7 +1,11 @@
 import mongoose from 'mongoose';
 
-export const MeterSchema= new mongoose.Schema({
-   
+ const MeterSchema= new mongoose.Schema({
+   userName:{
+       type:String,
+       required:true,
+       
+   },
    token:{
        type:String,
        required:true,
@@ -10,4 +14,5 @@ export const MeterSchema= new mongoose.Schema({
  
    
 });
-mongoose.model('Meter',MeterSchema);
+
+export default mongoose.model('Meter',MeterSchema);
