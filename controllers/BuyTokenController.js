@@ -4,11 +4,11 @@ import Token from '../models/token';
    export const buyToken= async(req,res)=>{
     const {id:_id} = req.params;   //Meter id
     const data=req.body;// MONEY  only
-    let token= eightdigitrandom = Math.floor(10000000 + Math.random() * 90000000);
+    let token = Math.floor(10000000 + Math.random() * 90000000);
 
  
     if(await Token.find({value:token})){
-        token= eightdigitrandom = Math.floor(10000000 + Math.random() * 90000000);
+        token = Math.floor(10000000 + Math.random() * 90000000);
     
     
     }

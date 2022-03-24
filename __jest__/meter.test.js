@@ -1,12 +1,12 @@
-const request = require("supertest");
-const chai = require("chai");
-const http = require("chai-http");
+import  request from "supertest";
+import  chai from "chai";
+import  http from "chai-http";
 import Meter from '../models/meter';
 const { expect } = chai;
 
-const db = require("../app/models");
+import db from "../app/models";
 const Meter = db.Meter;
-const app = require("../app");
+import  app from ("../app");
 const { mongoose } = require("../app/models");
 
 chai.use(http);

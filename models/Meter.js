@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MeterSchema= new mongoose.Schema({
+export const MeterSchema= new mongoose.Schema({
    
    token:{
        type:String,

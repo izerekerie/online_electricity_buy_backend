@@ -1,13 +1,13 @@
 import {meterRoutes} from './routes/meter.js'
-const mongoose= require('mongoose')
-const cors= require('cors')
-const dotenv= require('dotenv')
-const express=require('express')
+import mongoose from 'mongoose'
+import cors from 'cors'
+import dotenv from'dotenv'
+import express from 'express'
 dotenv.config();
 
 
  var app =express()
-const bodyParser=require('body-parser')
+import  bodyParser from 'body-parser'
 app.use(bodyParser.json());
  app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));

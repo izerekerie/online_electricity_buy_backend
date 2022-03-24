@@ -1,6 +1,6 @@
 
-import Meter from '../models/meter';
-import Token from '../models/token';
+import {MeterSchema} from '../models/meter';
+import {TokenSchema} from '../models/token';
 import mongoose from 'mongoose'
  export const getMeters= async(req,res)=>{
    try{

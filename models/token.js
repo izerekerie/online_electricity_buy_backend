@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const TokenSchema= new mongoose.Schema({
+export const TokenSchema= new mongoose.Schema({
    
     value:{
         type:Number,
@@ -23,3 +23,4 @@ const TokenSchema= new mongoose.Schema({
 
 });
 mongoose.model('Token',TokenSchema);
+
