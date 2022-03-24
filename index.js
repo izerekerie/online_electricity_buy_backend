@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
      res.send('welcome to our app');
  });
 
-app.use('api/meters',meterRoutes);
+app.use('/api/meters',meterRoutes);
 
 const PORT=process.env.PORT || 5000;
 
